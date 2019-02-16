@@ -1,9 +1,10 @@
-
+html, body { 
+ overflow-x: hidden;
+}
 body{
 	color: white;
 	font-family: "Gotham Pro", sans-serif;
-	 background: #17106e;
-	 overflow-x:hidden;  
+	 background: #17106e;	  
 }
 .logo{
 	margin-top: 65px;
@@ -45,7 +46,7 @@ body{
 		margin-bottom: 23px;
 	}
 	p{ 
-		width: 660px;
+		
 		 
 		font-weight: normal;
 		font-size: 18px;
@@ -151,6 +152,7 @@ body{
 
 .section_video{
 	 margin-top: -150px;
+	 width: 100%;
 	.laptop{
 		width: 1100px;
 		height: 900px;
@@ -291,8 +293,10 @@ body{
 	}	
 }
 footer{	
+	width: 100%;
 	text-align: center;
 	margin-bottom: 50px;
+
 	p{
 		font-size: 12px;
 		font-weight: lighter;
@@ -455,7 +459,10 @@ footer{
 		 height: 2000px;
 			}
 	.section_benefice{	margin-top: 45px; }
-
+	.fourcomp{display: none;}
+	.back2{display: none;}
+	.back4{display: none;}
+	.waves{display: none;}
 }
 @media (max-width: 992px) { 
 	.hero{
@@ -609,8 +616,58 @@ footer{
 	.logo{
 		margin-left: 20px;
 	}
-	.hero{width: 520px;
-		padding-left: 10px;
+	.hero{
+		width: 100%;
+		padding-left: 20px;
+		&__botton{
+			margin-top: 65px;
+			margin-left: 20px;
+			
+			width: 85%;
+			height: 60px;
+		}
 	}
-	 
- }
+	.section_video{
+		padding-top: 45px;
+	 	.laptop{
+			width: 295px;
+		}
+		.shaning{display: none;	}
+		video{
+		
+			width: 300px;
+			height: 265px;		
+			top: -10px;
+			left: 0px;		
+		}
+	}
+	.section_discovered{
+	 		h2{
+	 			line-height: 1.5;
+	 		}
+ 		}
+	footer{	
+	 	nav{
+	 		width:250px;		
+			ul{	
+				font-size: 11px;
+				li{				 
+					margin-left: 6px;
+					margin-right: 6px;
+					margin-top: 10px;		 
+					}
+				}
+			}
+		}	
+	.form{
+		&__field{			
+			input{
+				width: 100%;
+				margin-top: 10px;
+				&:nth-last-child(2){
+					margin-right: 0px;
+				}
+			}
+	}
+}
+}
